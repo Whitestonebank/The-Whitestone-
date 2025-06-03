@@ -1,0 +1,147 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Login Page Styles */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  padding: 0.75rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #005fa3;
+}
+
+#error-msg {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Dashboard Styles */
+header {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.atm-card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background-color: #004080;
+  border-radius: 15px;
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.atm-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.card-details {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+}
+
+.card-number {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.card-holder,
+.card-expiry {
+  font-size: 0.9rem;
+}
+
+.account-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.account-balance,
+.recent-transactions {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 45%;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.balance-amount {
+  font-size: 2rem;
+  color: #28a745;
+  margin-top: 0.5rem;
+}
+
+.recent-transactions ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.recent-transactions li {
+  margin-bottom: 0.5rem;
+}
